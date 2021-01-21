@@ -57,7 +57,7 @@ function megaFriend(arr) {
     var len = 0;
     var longest;
     if(arr.length <= 0) {
-        console.log('Invalid array');
+        return "Empty Array"
     }
     for(var i = 0; i < arr.length;i++) {
         if(arr[i].length > len) {
