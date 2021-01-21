@@ -1,3 +1,6 @@
+
+
+
 //this is convert kilometer to meter part
 function kilometerToMeter(kilometer) {
     if(kilometer < 0) {
@@ -5,8 +8,9 @@ function kilometerToMeter(kilometer) {
     }
     return kilometer * 1000;
 }
-//this is budgetcalculator part
 
+
+//this is budgetcalculator part
 function budgetCalculator(watch,mobile,laptop) {
     if(watch > 0 || mobile > 0 || laptop > 0) {
         var watchPrice = watch * 50;
@@ -17,9 +21,17 @@ function budgetCalculator(watch,mobile,laptop) {
         return totalCost;
     }
     else{
-        return "your item quantity is invalid"
+        if(watch == 0 && mobile == 0 && laptop == 0) {
+            return "you don't buy anithing";
+        }
+        else{
+            return "your item quantity is invalid"
+        }
+        
     }
 }
+
+
 //this is hotelcost part
 function hotelCost(day) {
     var price = 0;
@@ -51,8 +63,9 @@ function hotelCost(day) {
     }
     return price;
 }
-//this is megafriend part
 
+
+//this is megafriend part
 function megaFriend(arr) {
     var len = 0;
     var longest;
